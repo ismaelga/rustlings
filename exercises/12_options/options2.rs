@@ -32,7 +32,7 @@ mod tests {
         // while let and if let.
         if let Some(Some(integer)) = optional_integers.pop() {
             assert_eq!(integer, range);
-            range -= 1;
+            cursor -= 1;
         }
 
         assert_eq!(cursor, 0);
